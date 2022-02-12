@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qSlicerExtensionsToolsWidget</class>
+ <widget class="QWidget" name="qSlicerExtensionsToolsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>188</width>
+    <height>46</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QToolButton" name="InstallFromFileButton">
+     <property name="toolTip">
+      <string>Install Extension from File...</string>
+     </property>
+     <property name="text">
+      <string>Install from file...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../qSlicerBaseQTGUI.qrc">
+       <normaloff>:/Icons/Large/SlicerAddData.png</normaloff>:/Icons/Large/SlicerAddData.png</iconset>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolButton" name="ConfigureButton">
+     <property name="icon">
+      <iconset resource="../qSlicerBaseQTGUI.qrc">
+       <normaloff>:/Icons/Large/SlicerConfigure.png</normaloff>:/Icons/Large/SlicerConfigure.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="popupMode">
+      <enum>QToolButton::InstantPopup</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="ctkSearchBox" name="SearchBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="CheckForUpdatesAction">
+   <property name="icon">
+    <iconset resource="../qSlicerBaseQTGUI.qrc">
+     <normaloff>:/Icons/XSmall/SlicerCheckForUpdates.png</normaloff>:/Icons/XSmall/SlicerCheckForUpdates.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Check for Updates</string>
+   </property>
+  </action>
+  <action name="AutoUpdateAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Install Updates &amp;Automatically</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ctkSearchBox</class>
+   <extends>QLineEdit</extends>
+   <header>ctkSearchBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../qSlicerBaseQTGUI.qrc"/>
+ </resources>
+ <connections/>
+</ui>
